@@ -1,11 +1,11 @@
-// const express = require("express")
+const express = require("express")
 
-// const app = express();
+const app = express();
 
-// const PORT = 8000;
+const PORT = 8000;
 
-// app.get('/',(req,res)=>{
-//     return res.json({message:"hello from express server"})
-// })
+app.get('/',(req,res)=>{
+    return res.json({message:"hello from express server"})
+})
 
-// app.listen(PORT,()=>console.log(`server started at ${PORT}`));
+app.listen(PORT,()=>console.log(`server started at ${PORT}`));
